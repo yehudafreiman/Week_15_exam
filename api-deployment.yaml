@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: week-15-exam-app
-        image: image-registry.openshift-image-registry.svc:5000/yehudafreiman-dev/week-15-exam-app:latest
+        image: week-15-exam-app:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
