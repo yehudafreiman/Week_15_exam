@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: week_15_exam-app
+  name: week-15-exam-app
   labels:
-    app: week_15_exam-app
+    app: week-15-exam-app
     tier: backend
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: week_15_exam-app
+      app: week-15-exam-app
   template:
     metadata:
       labels:
-        app: week_15_exam-app
+        app: week-15-exam-app
         tier: backend
     spec:
       containers:
-      - name: week_15_exam-app
-        image: image-registry.openshift-image-registry.svc:5000/yehudafreiman-dev/week_15_exam-app:latest
+      - name: week-15-exam-app
+        image: image-registry.openshift-image-registry.svc:5000/yehudafreiman-dev/week-15-exam-app:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
